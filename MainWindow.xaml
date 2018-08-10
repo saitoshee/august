@@ -10,20 +10,20 @@
             <ColumnDefinition Width="550" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Menu>
-            <MenuItem Header="File">
-                <MenuItem Header="Option"></MenuItem>
-            </MenuItem>
-        </Menu>
+
         <TabControl Grid.Column="0" Height="361" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="550">
 
             <TabItem Header="mememe">
 
                 <WrapPanel HorizontalAlignment="Left" Width="544">
 
-                    <TextBlock Margin="5"><Run Text="Путь к выходному файлу"/></TextBlock>
-                    <TextBox Width ="500" Grid.Row="1" x:Name="txb" FontSize="12"
-                 VerticalContentAlignment="Center" Margin="5"/>
+
+
+                    <TextBox x:Name="textPath"
+                        Width="Auto" 
+                        Height="Auto"
+                        Padding="3"/>
+
                     <TextBlock Text="Выходной н. ток " 
                                Width="Auto" 
                                Height="Auto"
@@ -69,14 +69,6 @@
                             HorizontalAlignment="Right"
                             Click="Button_Click"
                             IsDefault="True"/>
-                    <Button Width="100" 
-                            Height="20" 
-                            Content="Путь"
-                            Margin="3"
-                            VerticalAlignment="Bottom"
-                            HorizontalAlignment="Right"
-                            Click="Button_Click_Save"
-                            IsDefault="True"/>
                 </WrapPanel>
 
             </TabItem>
@@ -99,8 +91,7 @@
             <TextBlock x:Name="textOutput"
                    TextWrapping="WrapWithOverflow"
                    Height="Auto"
-                   Padding="3"
-                   
+                   Padding="3"                
                    />
         </WrapPanel>
 
